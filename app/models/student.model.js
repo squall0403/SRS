@@ -1,12 +1,51 @@
 module.exports = (sequelize, Sequelize) => {
     const Student = sequelize.define("student", {
-      firstnamme: {
+      forename: {
         type: Sequelize.STRING
       },
-      lastname: {
+      surname: {
         type: Sequelize.STRING
       },
-      inschool: {
+      preferredname: {
+        type: Sequelize.STRING
+      },
+      schoolid: {
+        type: Sequelize.STRING
+      },
+      gender: {
+        type: Sequelize.STRING
+      },
+      dob: {
+        type: Sequelize.DATEONLY
+      },
+      address: {
+        type: Sequelize.STRING
+      },
+      district: {
+        type: Sequelize.STRING
+      },
+      city: {
+        type: Sequelize.STRING
+      },
+      country: {
+        type: Sequelize.STRING
+      },
+      yeargroup: {
+        type: Sequelize.STRING
+      },
+      yeargroupnum: {
+        type: Sequelize.INTEGER
+      },
+      academichouse: {
+        type: Sequelize.STRING
+      },
+      form: {
+        type: Sequelize.STRING
+      },
+      studentemail: {
+        type: Sequelize.STRING
+      },
+      schoolstatus: {
         type: Sequelize.BOOLEAN
       }
     });
